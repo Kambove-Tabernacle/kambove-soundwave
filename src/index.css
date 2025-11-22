@@ -8,94 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 97%;
-    --foreground: 220 20% 15%;
+    --background: 240 20% 8%;
+    --foreground: 45 100% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 15%;
+    --card: 240 18% 12%;
+    --card-foreground: 45 100% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 15%;
+    --popover: 240 18% 12%;
+    --popover-foreground: 45 100% 95%;
 
-    --primary: 220 45% 25%;
-    --primary-foreground: 45 100% 96%;
+    --primary: 45 100% 60%;
+    --primary-foreground: 240 20% 10%;
 
-    --secondary: 220 20% 90%;
-    --secondary-foreground: 220 20% 15%;
+    --secondary: 240 15% 16%;
+    --secondary-foreground: 45 100% 95%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 240 15% 15%;
+    --muted-foreground: 240 10% 60%;
 
-    --accent: 45 95% 55%;
-    --accent-foreground: 220 45% 15%;
+    --accent: 45 100% 60%;
+    --accent-foreground: 240 20% 10%;
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 20% 88%;
-    --input: 220 20% 88%;
-    --ring: 45 95% 55%;
+    --border: 240 15% 20%;
+    --input: 240 15% 20%;
+    --ring: 45 100% 60%;
 
     --radius: 0.75rem;
 
-    --divine-gold: 45 95% 55%;
-    --divine-gold-light: 45 100% 70%;
-    --divine-blue: 220 60% 35%;
-    --divine-blue-dark: 220 65% 20%;
+    --divine-gold: 45 100% 60%;
+    --divine-gold-light: 45 100% 75%;
+    --divine-blue: 240 40% 25%;
+    --divine-blue-dark: 240 50% 12%;
     --sacred-white: 0 0% 98%;
 
-    --gradient-divine: linear-gradient(135deg, hsl(45 95% 55% / 0.1), hsl(220 60% 35% / 0.1));
-    --gradient-gold: linear-gradient(135deg, hsl(45 95% 55%), hsl(45 100% 70%));
-    --shadow-divine: 0 10px 40px -10px hsl(45 95% 55% / 0.3);
+    --gradient-divine: linear-gradient(135deg, hsl(45 100% 60% / 0.15), hsl(240 40% 25% / 0.15));
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 60%), hsl(45 100% 75%));
+    --shadow-divine: 0 10px 40px -10px hsl(45 100% 60% / 0.4);
+    --shadow-deep: 0 20px 60px -15px hsl(240 50% 5% / 0.8);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --sidebar-background: 220 45% 25%;
-    --sidebar-foreground: 45 100% 96%;
-    --sidebar-primary: 45 95% 55%;
-    --sidebar-primary-foreground: 220 45% 15%;
-    --sidebar-accent: 220 50% 30%;
-    --sidebar-accent-foreground: 45 100% 96%;
-    --sidebar-border: 220 40% 30%;
-    --sidebar-ring: 45 95% 55%;
-  }
-
-  .dark {
-    --background: 220 45% 12%;
-    --foreground: 45 100% 96%;
-
-    --card: 220 40% 16%;
-    --card-foreground: 45 100% 96%;
-
-    --popover: 220 40% 16%;
-    --popover-foreground: 45 100% 96%;
-
-    --primary: 45 95% 55%;
-    --primary-foreground: 220 45% 15%;
-
-    --secondary: 220 35% 22%;
-    --secondary-foreground: 45 100% 96%;
-
-    --muted: 220 35% 20%;
-    --muted-foreground: 220 15% 65%;
-
-    --accent: 45 95% 55%;
-    --accent-foreground: 220 45% 15%;
-
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 220 35% 25%;
-    --input: 220 35% 25%;
-    --ring: 45 95% 55%;
-
-    --sidebar-background: 220 50% 10%;
-    --sidebar-foreground: 45 100% 96%;
-    --sidebar-primary: 45 95% 55%;
-    --sidebar-primary-foreground: 220 45% 15%;
-    --sidebar-accent: 220 45% 18%;
-    --sidebar-accent-foreground: 45 100% 96%;
-    --sidebar-border: 220 40% 20%;
-    --sidebar-ring: 45 95% 55%;
   }
 }
 
@@ -131,6 +84,10 @@ All colors MUST be HSL.
 
   .transition-smooth {
     transition: var(--transition-smooth);
+  }
+
+  .shadow-deep {
+    box-shadow: var(--shadow-deep);
   }
 
   .animate-glow {
