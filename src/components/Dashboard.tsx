@@ -65,7 +65,7 @@ export const Dashboard = () => {
         {/* Overview Tab */}
         <TabsContent value="overview" className="space-y-6 animate-in fade-in duration-300">
           {/* Current Track Card */}
-          <Card className="gradient-divine border-accent/20 shadow-divine">
+          <Card variant="elevated" className="gradient-divine">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Music className="h-5 w-5 text-accent" />
@@ -98,7 +98,7 @@ export const Dashboard = () => {
 
           {/* Quick Stats Grid */}
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <Card className="transition-smooth hover:shadow-divine hover:border-accent/30 hover:scale-105">
+            <Card variant="elevated" className="hover:scale-105">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Auditeurs Actuels</CardTitle>
                 <Users className="h-5 w-5 text-accent" />
@@ -112,7 +112,7 @@ export const Dashboard = () => {
               </CardContent>
             </Card>
 
-            <Card className="transition-smooth hover:shadow-divine hover:border-accent/30 hover:scale-105">
+            <Card variant="elevated" className="hover:scale-105">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Playlists Actives</CardTitle>
                 <Music className="h-5 w-5 text-accent" />
@@ -123,7 +123,7 @@ export const Dashboard = () => {
               </CardContent>
             </Card>
 
-            <Card className="transition-smooth hover:shadow-divine hover:border-accent/30 hover:scale-105">
+            <Card variant="elevated" className="hover:scale-105">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Programmes</CardTitle>
                 <Calendar className="h-5 w-5 text-accent" />
@@ -134,7 +134,7 @@ export const Dashboard = () => {
               </CardContent>
             </Card>
 
-            <Card className="transition-smooth hover:shadow-divine hover:border-accent/30 hover:scale-105">
+            <Card variant="elevated" className="hover:scale-105">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Uptime</CardTitle>
                 <Activity className="h-5 w-5 text-accent" />
@@ -209,7 +209,7 @@ export const Dashboard = () => {
 
         {/* Controls Tab */}
         <TabsContent value="controls" className="space-y-6 animate-in fade-in duration-300">
-          <Card className="gradient-divine border-accent/20 shadow-divine">
+          <Card variant="elevated" className="gradient-divine">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Radio className="h-5 w-5 text-accent" />

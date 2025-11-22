@@ -41,7 +41,7 @@ function AppContent() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       {/* Header with horizontal tabs */}
-      <header className="border-b border-border/50 bg-card/50 backdrop-blur-xl sticky top-0 z-50 shadow-deep">
+      <header className="glass-effect sticky top-0 z-50 shadow-deep border-b border-border/50">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-3">
