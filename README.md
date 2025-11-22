@@ -1,4 +1,63 @@
-# Welcome to your Lovable project
+# 🎵 Radio Kambove Tabernacle - Système de Gestion Webradio
+
+Interface web complète pour gérer une webradio 24/7 diffusant vers Zeno.fm, avec gestion de playlists, programmation horaire, upload audio, statistiques en temps réel et support de diffusion live via BUTT.
+
+## ✨ Fonctionnalités
+
+- 🎼 **Gestion de Playlists** - Créez et gérez vos playlists musicales
+- ⏰ **Programmation Horaire** - Planifiez automatiquement vos prédications
+- 📤 **Upload Audio** - Téléchargez et convertissez vos fichiers audio (MP3, WAV, FLAC, OGG, M4A)
+- 📊 **Statistiques Temps Réel** - Suivez vos auditeurs et les titres populaires via WebSocket
+- 🎙️ **Diffusion Live** - Intégration BUTT pour vos directs de prédication
+- 🔐 **Authentification Multi-Rôles** - Admin et Opérateur
+- 📱 **PWA** - Utilisable sur mobile et desktop, installation possible
+- 🌙 **Design Spirituel** - Interface adaptée à l'église Kambove Tabernacle
+
+## 🚀 Déploiement
+
+👉 **Consultez le [Guide de Déploiement Complet](./DEPLOYMENT.md)** pour installer le système sur votre serveur Ubuntu avec Docker.
+
+## 🛠️ Architecture Technique
+
+- **Frontend**: React + TypeScript + Vite + Tailwind CSS
+- **Backend**: Node.js + Express + PostgreSQL
+- **Streaming**: Liquidsoap + Icecast
+- **WebSocket**: Stats en temps réel
+- **Containerisation**: Docker + Docker Compose
+- **Gestion**: Portainer
+
+## 📋 Prérequis
+
+- Ubuntu Server avec Docker et Portainer
+- Minimum 2GB RAM, 20GB disque
+- Ports: 80, 3000, 8000
+
+## 🔑 Identifiants par Défaut
+
+- **Interface Web**: `admin` / `admin123`
+- **Icecast Admin**: `admin` / `hackme`
+
+⚠️ **Changez ces identifiants en production !**
+
+## 📖 Documentation
+
+- [Guide de Déploiement](./DEPLOYMENT.md)
+- [Configuration Zeno.fm](./DEPLOYMENT.md#-configuration-zenofm)
+- [Configuration BUTT](./DEPLOYMENT.md#étape-7-configuration-butt-pour-les-directs)
+- [Dépannage](./DEPLOYMENT.md#-dépannage)
+
+## 🎯 Accès Rapide
+
+Après déploiement:
+- **Interface**: http://votre-serveur-ip
+- **Stream**: http://votre-serveur-ip:8000/radio.mp3
+- **Icecast**: http://votre-serveur-ip:8000/admin
+
+## 🙏 À Propos
+
+Développé pour l'église **Kambove Tabernacle** - Pour que la parole de Dieu rayonne 24/7 📻
+
+---
 
 ## Project info
 
