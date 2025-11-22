@@ -164,5 +164,7 @@ class ApiClient {
   }
 }
 
-// Utiliser MockAPI si en mode démo, sinon ApiClient réel
-export const api = isDemoMode() ? new MockApiClient() as unknown as ApiClient : new ApiClient();
+// Utiliser le vrai client API pour production
+export const api = new ApiClient();
+
+// Pour mode démo: export const api = new MockApiClient() as unknown as ApiClient;
