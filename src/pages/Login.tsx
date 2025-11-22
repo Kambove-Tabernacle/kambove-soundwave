@@ -5,7 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import { Cross, Loader2 } from 'lucide-react';
+import { Cross, Loader2, AlertCircle } from 'lucide-react';
+import { isDemoMode } from '@/lib/mockApi';
+import { Alert, AlertDescription } from '@/components/ui/alert';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -55,6 +57,16 @@ const Login = () => {
         </CardHeader>
 
         <CardContent>
+          {isDemoMode() && (
+            <Alert className="mb-4 bg-primary/10 border-primary/20">
+              <AlertCircle className="h-4 w-4 text-primary" />
+              <AlertDescription className="text-sm">
+                <strong>Mode Démo</strong> - Vous testez l'interface sans backend. 
+                Déployez sur votre serveur Ubuntu pour activer toutes les fonctionnalités.
+              </AlertDescription>
+            </Alert>
+          )}
+          
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
               <label className="text-sm font-medium">Nom d'utilisateur</label>

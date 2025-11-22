@@ -1,8 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Radio, Music, Calendar, Users, Play, Pause, Volume2 } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Radio, Music, Calendar, Users, Play, Pause, Volume2, AlertCircle } from "lucide-react";
 import { useState } from "react";
+import { isDemoMode } from "@/lib/mockApi";
 
 export const Dashboard = () => {
   const [isLive, setIsLive] = useState(true);
@@ -14,6 +16,20 @@ export const Dashboard = () => {
 
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
+      {/* Mode Démo Alert */}
+      {isDemoMode() && (
+        <Alert className="bg-primary/10 border-primary/30 animate-pulse-slow">
+          <AlertCircle className="h-5 w-5 text-primary" />
+          <AlertDescription className="ml-2">
+            <strong className="text-primary">Mode Démo Actif</strong> - Vous testez l'interface avec des données fictives.
+            Pour activer toutes les fonctionnalités, déployez le système sur votre serveur Ubuntu en suivant le{' '}
+            <a href="https://github.com/votre-repo/DEPLOYMENT.md" target="_blank" rel="noopener noreferrer" className="underline font-semibold">
+              Guide de Déploiement
+            </a>.
+          </AlertDescription>
+        </Alert>
+      )}
+      
       {/* Status Card */}
       <Card className="gradient-divine border-accent/20 shadow-divine">
         <CardHeader className="pb-3">

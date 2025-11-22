@@ -1,3 +1,5 @@
+import { MockApiClient, isDemoMode } from './mockApi';
+
 const API_BASE = '/api';
 
 export interface User {
@@ -162,4 +164,5 @@ class ApiClient {
   }
 }
 
-export const api = new ApiClient();
+// Utiliser MockAPI si en mode démo, sinon ApiClient réel
+export const api = isDemoMode() ? new MockApiClient() as unknown as ApiClient : new ApiClient();
