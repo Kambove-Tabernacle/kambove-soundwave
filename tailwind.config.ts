@@ -50,9 +50,13 @@ export default {
         divine: {
           gold: "hsl(var(--divine-gold))",
           "gold-light": "hsl(var(--divine-gold-light))",
+          "gold-glow": "hsl(var(--divine-gold-glow))",
           blue: "hsl(var(--divine-blue))",
           "blue-dark": "hsl(var(--divine-blue-dark))",
           white: "hsl(var(--sacred-white))",
+        },
+        glass: {
+          DEFAULT: "hsl(var(--glass-overlay))",
         },
       },
       fontFamily: {

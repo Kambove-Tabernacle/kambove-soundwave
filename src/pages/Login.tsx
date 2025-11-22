@@ -47,9 +47,9 @@ const Login = () => {
         <Cross className="absolute top-1/3 right-1/4 w-8 h-8 text-primary/10 animate-float" />
       </div>
 
-      <Card className="w-full max-w-md relative z-10 shadow-2xl border-border/50 bg-card/95 backdrop-blur-sm">
+      <Card variant="glass" className="w-full max-w-md relative z-10 shadow-2xl">
         <CardHeader className="text-center space-y-2">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mb-4 shadow-glow animate-pulse-glow">
+          <div className="mx-auto w-16 h-16 gradient-gold rounded-2xl flex items-center justify-center mb-4 animate-pulse-glow">
             <Cross className="w-8 h-8 text-primary-foreground" />
           </div>
           <CardTitle className="text-3xl font-heading">Kambove Tabernacle</CardTitle>
