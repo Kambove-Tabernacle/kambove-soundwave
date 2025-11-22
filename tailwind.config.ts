@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        divine: {
+          gold: "hsl(var(--divine-gold))",
+          "gold-light": "hsl(var(--divine-gold-light))",
+          blue: "hsl(var(--divine-blue))",
+          "blue-dark": "hsl(var(--divine-blue-dark))",
+          white: "hsl(var(--sacred-white))",
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Cinzel', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
